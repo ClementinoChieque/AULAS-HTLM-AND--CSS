@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>colgroup</title>
+    <link rel="stylesheet" href="colgroup.css">
+
+    <!--colgroup é usado para estilizar colunas especificas de uma tabela-->
+</head>
+<body>
+    <!--Cada grupo é especificado com um <col>-->
+<table> <!--Span especifica quantas colunas obtem o estilo--> 
+    <colgroup>
+    <col span="2" style="background-color: #d6eeee;"> 
+    <col span="3" style="background-color: rgb(129, 15, 15);">
+    <!--Ocultar colunas com a visibility:collapse-->
+    <col span="2" style="visibility: collapse">
+</colgroup>
+    <tr>
+        <th>Nome</th>
+        <th>Sobrenome</th>
+        <th>Idade</th>
+        <th>Área de trabalho</th>
+
+    </tr>
+    <tr>
+        <td>Clementinp</td>
+        <td>Chieque</td>
+        <td>23 anos</td>
+        <td>Contabilista</td>
+    </tr>
+    <tr>
+        <td>Paulo</td>
+        <td> Domingos</td>
+        <td>40 anos</td>
+        <td>Administrador de rede</td>
+    </tr>
+</table>
+    <!--Listas de descrição-->
+    <dl> <!---tag dl define a lista de descrição-->
+        <dt>Café</dt> <!---dt define o termo (nome)-->
+        <dd>Café gostoso</dd> <!--dd descreve cada termo-->
+    </dl>
+    
+</body>
+</html>

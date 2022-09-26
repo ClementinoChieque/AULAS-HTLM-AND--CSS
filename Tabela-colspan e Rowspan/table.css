@@ -1,0 +1,18 @@
+@charset "utf-8";
+body{
+    background-color: black;
+}
+h1{
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+table,th,td{
+    border: 2px solid #dd0c0c;
+    border-collapse: collapse;
+    color: white;
+    padding: 5px;
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-right: 100px;
+}

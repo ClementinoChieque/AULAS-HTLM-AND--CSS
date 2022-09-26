@@ -1,0 +1,16 @@
+@charset "utf-8";
+        th:nth-child(even), th:nth-child(eve){
+            
+            background-color: rgba(rgb(35, 94, 133), rgba(131, 163, 13, 0.63), rgba(107, 107, 179, 0.815), alpha);
+        }
+        tr:nth-child(even), th:nth-child(eve){
+            
+            background-color: rgba(rgba(96, 145, 177, 0.849), rgba(130, 143, 82, 0.397), rgba(107, 107, 179, 0.815), alpha);
+            
+        }
+        tr{
+            border-bottom: 1px solid darkred;
+        }
+        tr:hover{
+            background-color: blue;
+        }

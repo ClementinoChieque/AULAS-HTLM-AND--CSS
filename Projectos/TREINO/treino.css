@@ -1,0 +1,36 @@
+@charset "utf-8";
+:root{
+    --core1:#ffff;
+    --core2:#fdff;
+    --core3:#000000;
+    --core4:#0c0c2c;
+}
+body{
+   background-color: var(--core3);
+}
+h1{
+    color: var(--core1);
+}
+header{
+    background-color: var(--core4);
+}
+*{
+    margin: 0px; padding: 0px;
+}
+#nome{
+    width: 100px; 
+}
+#centro{
+    text-align: left;
+}
+nav{
+    
+}
+main{
+    background-color: var(--core1);
+}
+#camera{
+width: 100px;
+text-align: center;
+ 
+}

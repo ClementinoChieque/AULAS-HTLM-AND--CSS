@@ -1,0 +1,38 @@
+@charset "UTF-8";
+:root{
+    --core1:#080b33c2; 
+    --core2:#ffff;
+    
+}
+*{
+    margin: auto; padding: 0px;
+}
+
+body{
+    background-color: var(--core1) ;
+}
+
+img{
+    height: 100px; width: 100px; 
+    
+}
+figcaption{
+    color: #ff0800e3;
+}
+source{
+    text-align: center;
+}
+header{
+    background-color: black;
+    
+}
+#imgrodape{
+    width: 80px;
+}
+nav{
+    text-align: end;
+    padding: 20, 10, 10px
+}
+#mainvide{
+background-color: var(--core2);
+}

@@ -1,0 +1,25 @@
+@charset "utf-8";
+table,th,td{
+    border: 2px solid green;
+    border-collapse: collapse;
+   
+}
+h1{
+    text-align: center;
+}
+th,td{
+    background-color: white;
+}
+main th,td{
+    text-align: center;
+    
+}
+/*Tamanho de tabela*/
+table{
+    width: 100%;
+    
+}
+/*Largura das linhas*/
+tr{
+    height: 20px;
+}

@@ -1,0 +1,23 @@
+@charset "UTF-8";
+body{
+    
+    
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+/* link de botão*/
+
+a:link,a:visited{
+    background-color: #77552d81;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: inline-block;
+    color: white
+
+}
+a:hover,a:active{
+    background-color: grey;
+}

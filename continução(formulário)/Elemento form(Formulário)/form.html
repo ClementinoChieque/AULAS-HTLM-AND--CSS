@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="prname">first name:</label> <!--usado para usuarios de leitor de tela.-->
+    <input type="text" id="prname" name="prname"> <!--O atributo <for> deve ser  igual ao atributo <id> do input para guiá-lo-->
+        <label for="cars"> choose acar:</label>
+        <select name="cars" id="cars" size="4" multiple> <!-- o atributo <Multiple> permite que o usuário selecione mais deum valor ou item. -->
+        <option value="volvo">volvo</option>
+        <option value="audi">audi</option>
+        <option value="jipe">jipe</option>
+        <option value="fiat">fiat</option> <!--Os elementos <option> definem uma opção que pode ser selecionada-->
+    </select> 
+    <textarea name="message" id="cars" cols="30" rows="8"> 
+        O gato estava a brincar no jardim.
+    </textarea> <!-- o elemento <textarea> define um campo de entradas de várias linhas(uma área de texto)-->
+
+         <!--O atributo <rows> especifica o númeor visível de linhas em uma área de texto--> <!--O atributo <cols> especifica a largura visível de uma área de texto.-->
+            
+    <button type="button" onclick="alert(`Ola mundo`)"> clique aqui para saberes mais.</button>
+    <!--o <button> define um botão clicável, especificar sempre o atributo type.-->
+
+
+        <!--ELEMENTOS <fieldset> e <legend>-->
+
+            <!--o <fieldset> é usado para agrupar dados relacionados em formulário-->
+            <!--O <legend> define uma legenda para fieldset-->
+                <form action="/form.html">
+                    <fieldset>
+                        <legend>Personalidade:</legend>
+                        <label for="prnma">frst name</label> <br>
+                        <input type="text" id="prname" name="prname" value="Clemente"> <br>
+                        <label for="lname">last name</label> <br>
+                        <input type="text" name="lname" id="lname" value="Chieque"> <br>
+                        <input type="submit" value="Submit">
+                    </fieldset>
+                </form>
+    
+<!--ELEMENTO <datalist> especifica uma lista de opções predefinidas para um <input>
+os usuários verão uma lista suspensa das opções predefinidas á medida que inserem dados
+O atributo <list> do <input> deve se referir ao <id> atributo do <datalist>-->
+
+    <form action="/form.html">
+        <input list="browser">
+        <datalist id="browser">
+            <option value="internet explorer"></option>
+            <option value="firefox"></option>
+            <option value="chrome"></option>
+            <option value="opera"></option>
+            <option value="safari"></option>
+
+        </datalist>
+    </form>
+    <!--ELEMENTO <output> representa o resultado de um cálculo (realizado por um script)-->
+
+        <form action="/form.html" oninput="x.value=parseInt(a.value)+parseInt(b.value)"> 0
+            <input type="range" name="a" id="a" value="50">
+            100 +
+            <input type="number" name="b" id="b" value="50">
+             =
+            
+            <output name="x" for="a b"></output>
+            <br><br>
+            <input type="submit">
+        </form>
+</body>
+</html>

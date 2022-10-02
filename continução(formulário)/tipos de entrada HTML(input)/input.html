@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input</title>
+</head>
+<body>
+    <form>
+        
+        <label for="nomeusuário"> nome do  usuário:</label>
+        <input type="text" name="nomeusuário" id="nomeusuário"> <br><br>
+        <label for="pwd">password</label>  
+        <input type="password" name="pwd" id="pdw">  <!--o input type="password" define um campo de senha.-->
+        <input type="submit" value="submit">
+        <input type="reset"> <!--input type="reset" defiine um botão de redefinição que redefinirá todos os valores do formulário para seus valores padrão-->
+
+    </form>
+    <!-- Tipo de entrada rádio-->
+    <!--Os botões de opção permitem que um usuário drlrcione apenas uma de um número limitado de opções-->
+    <p>Escolhe umas das suas linguagens favoritas</p>
+    <form >
+        <input type="radio" name="favlinguagens" id="html" value="HTML">
+        <label for="html">HTML</label> <br>
+        <input type="radio" name="favlinguagens" id="css" value="CSS">
+        <label for="Javascript">CSS</label> <br>
+        <input type="radio" name="favlinguagens" id="Javascript" value="Javascript">
+        <label for="Javascript">Javascript</label>
+    </form>
+    <h1>caixa de seleção do tipo de entrada</h1>
+    <!--As caixas de seleção permitem que um usuário selecione ZERO ou MAIS opções de um número limitado de opções-->
+    <form >
+        <input type="checkbox" name="car1" id="car1" value="Audi">
+        <label for="car1">Tenho um carro</label> <br>
+        <input type="checkbox" name="car2" id="car2" value="bike">
+        <label for="car2">Tenho uma bicicleta</label> <br>
+        <input type="checkbox" name="car3" id="car3" value="boat">
+        <label for="car3">Tenho um barco</label>
+    </form>
+    <h2>Cor do tipo de entrada</h2>
+    <form >
+    <label for="favcolor"> selecione sua cor favorita</label>
+    <input type="color" name="favcolor" id="favcolor">
+    </form>
+    <h1>tipo de entrada data</h1>
+    <p>Insere sua data de nascimento</p>
+    <form >
+        <label for="aniversário">Data de nascimento:</label>
+        <input type="date" name="aniversário" id="aniversário">
+    </form>
+    <p>Também pode-se usar os atributos &lt;min&gt; e para adicionar restrições a data &lt;max&gt;  </p>
+    <form >
+        <label for="datamax">Inser a data depois de 1980-01-01:</label>
+        <input type="date" name="datamax" id="datamax" max="1979-12-31"> <br><br>
+        <label for="datamin"> Inser a data antes 2000-01-01:</label>
+        <input type="min" name="datamin" id="datamin" min="200-01-01">
+    </form>
+    <h2>Tipo de entrada Datetime-local</h2>
+
+    <!-- O input type="datetime-local" especifica um campo de entrada de data e hora, sem fuso horário-->
+    <form action="">
+        <label for="horaaniversário"> aniversário (data e hora):</label>
+        <input type="datetime-local" name="horaaniversário" id="horaaniversário">
+    </form>
+    <h1>tipo de entrada E-mail</h1>
+    <!-- O input type="email" é usado para campos de entrada que devem conter um endereço de e-mail.  -->
+    <label for="email"> Inser o seu e-mail:</label>
+    <input type="email" name="email" id="email">
+    <h2>Imagemdo tipo de entrada</h2>
+    <!--O input type="image" define uma imagem como um botão de envio. O caminho para imagem é especificado no  atributo src-->
+
+    <form >
+        <input type="image" src="imagem/redescom.png" alt="submit" width="48" height="48">
+    </form>
+    <h2>Arquivo de tipo de entrada</h2>
+    <!--O input type="file" define um campo de seleção de arquivo e um botão "procurar" uploads de arquivo-->
+     <form>
+         <label for="myfile">selecione um ficheiro:</label>
+             <input type="file" name="myfile" id="myfile">
+     </form>
+     <h2>tipo de entrada oculto</h2>
+     <!-- O input type="hidden" define um campo de entrada oculto(não visível para um usuário).
+    Um campo oculto permite queos  desenvolvidores da web incluam daods que não podem vistos ou modificados pelos usuários quando um formulário é enviado-->
+     <form >
+         <label for="fname"> First name:</label>
+         <input type="text" name="fname" id="fname">
+         <input type="hidden" name="custId" id="custId" value="3487">
+         <input type="submit" value="submit">
+     </form>
+    <h3>Tipo de entrada Mês</h3>
+    <!--O input type="month" permite que o usuário selecione um mês e ano.-->
+     <form >
+         <label for="diamesaniversario">nascimento(mês e ano)</label>
+             <input type="month" name="diamesaniversario" id="diamesaniversario">
+     </form>
+     <h3>Número do tipo de entrada</h3>
+     <form >
+         <label for="quantidade"> quantidade entre 1 e 5</label>
+         <input type="number" name="quantidade" id="quantidade" min="1" max="5">
+     </form>
+     <h5>Outro exemplo</h5>
+     <form >
+        <label for="quantidade"> quantidade</label>
+        <input type="number" name="quantidade" id="quantidade" min="0" max="100" step="10" value="30">
+    </form>
+    <h1>Pesquisa de Tipo de entrada</h1>
+    <!-- O input type="search" name="" é usado para campos de pesquisas( um campo de pesquisa se comporta como um campo de texto normal)-->
+    <form>
+        <label for="gsearch">search google:</label>
+        <input type="search" name="gsearch" id="gsearch">
+    </form>
+    <h2>tipo de entrada tel</h2>
+    <!-- O input type="tel" é usado para campos de entrada  que devem conter um número de telefone.-->
+     <label for="phone"> Insere o seu número:</label>
+    <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+
+    <h3>Hora do tipo de entrada</h3>
+    <form>
+        <label for="appt"> selecione uma hora:</label>
+        <input type="time" name="appt" id="appt" name="appt">
+    </form>
+    <h4>URL do tipo  de entrada</h4>
+    <!--O input type="url" é usado para campos de entrada que devem conter um endereço de url.-->
+    <form>
+        <label for="homepage">add your homepage:</label>
+        <input type="url" name="homepage" id="homepage">
+    </form>
+    <h4>Semana do tipo de entrada</h4>
+    <!--O input type="week" permite que o usuário selecione uma semanae ano-->
+    <label for="week">selecione uma semana</label>
+    <input type="week" name="week" id="week">
+
+   
+</body>
+</html>
